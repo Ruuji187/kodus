@@ -26,7 +26,7 @@
             <thead style="white-space: nowrap;">
                 <tr>
                     <th class='action' style='position:sticky; left: 0; background-color: white !important'>Action</th>
-                    <th>Date</th>
+                    <th onclick="w3.sortHTML('#myThirdTable', '.item2', 'td:nth-child(2)')" style="cursor: pointer;">Date</th>
                     <th onclick="w3.sortHTML('#myThirdTable', '.item3', 'td:nth-child(3)')" style="cursor: pointer;">DTN / DRN</th>
                     <th>Description</th>
                     <th>JM Gwapo</th>
