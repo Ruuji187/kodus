@@ -340,16 +340,16 @@ $result4 = $conn->query($sql4);
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http://localhost/kodus/js/jquery-3.6.4.min.js"></script>
-    <script src="http://localhost/kodus/js/sweetalert2@10.js"></script>
-    <script src="http://localhost/kodus/js/7cec42d8be.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://localhost/kodus/script.js"></script>
-    <script type="text/javascript" src="http://localhost/kodus/dataScript.js"></script>
-    <script type="text/javascript" src="http://localhost/kodus/js/w3.js"></script>
-	<link rel="icon" href="http://localhost/kodus/assets/logo.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="http://localhost/kodus/css/style.css">
-    <link rel="stylesheet" href="http://localhost/kodus/css/sweetalert2.min.css">
-    <link rel="stylesheet" href="http://localhost/kodus/css/font-awesome.min.css">
+    <script src="http://crg-co1-23-0028/kodus/js/jquery-3.6.4.min.js"></script>
+    <script src="http://crg-co1-23-0028/kodus/js/sweetalert2@10.js"></script>
+    <script src="http://crg-co1-23-0028/kodus/js/7cec42d8be.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/script.js"></script>
+    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/dataScript.js"></script>
+    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/js/w3.js"></script>
+	<link rel="icon" href="http://crg-co1-23-0028/kodus/assets/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="http://crg-co1-23-0028/kodus/css/style.css">
+    <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/font-awesome.min.css">
 </head>
 <body>
     <div id="loading-overlay">
@@ -362,16 +362,16 @@ $result4 = $conn->query($sql4);
             <span id="text" class="smooth-transition">KliMalasakit Online Document Updating System</span>
 		</h2>
 		<div class="profile-container">
-			<img class="profile" src="http://localhost/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
+			<img class="profile" src="http://crg-co1-23-0028/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
 			<div class="dropdown-content">
-				<img class="big-profile" src="http://localhost/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
+				<img class="big-profile" src="http://crg-co1-23-0028/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
 				<!-- <div class="desc">Logo</div> -->
 			</div>
 		</div>
 		<div class="username">
 			<i class="fa fa-caret-down"></i><button class="usrDrpDwn"><?php echo htmlspecialchars($username, ENT_QUOTES, 'UTF-8'); ?></button>
 			<div class="usrOpt">
-				<a class="drpdwn" href="http://localhost/kodus/settings"><span class="fa fa-gear">&nbsp;</span>Settings</a>
+				<a class="drpdwn" href="http://crg-co1-23-0028/kodus/settings"><span class="fa fa-gear">&nbsp;</span>Settings</a>
 				<hr>
 				<a class="drpdwn" id="logoutButton"><span class="fa fa-sign-out">&nbsp;</span>Logout</a>
 			</div>

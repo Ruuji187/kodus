@@ -108,9 +108,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br><br>
         <button class="infoBtn" style="position: absolute; left: 170px" id="changeUserBtn" type="button" onclick="toggleChangeUser()">Change Username?</button>
 
-        <button class="infoBtn" style="position: absolute; left: 450px; top: 180px;" id="changePassBtn" type="button" onclick="toggleChangePass()">Change Password?</button>
+        <button class="infoBtn" style="position: absolute; left: 450px; top: 202px;" id="changePassBtn" type="button" onclick="toggleChangePass()">Change Password?</button>
 
-        <button class="infoBtn" style="position: absolute; left: 720px; top: 180px;" id="changeDPBtn" type="button" style="margin-left: 25px;" onclick="toggleChangeDP()">Change Display Photo?</button>
+        <button class="infoBtn" style="position: absolute; left: 720px; top: 202px;" id="changeDPBtn" type="button" style="margin-left: 25px;" onclick="toggleChangeDP()">Change Display Photo?</button>
 
         <div id="changeUser" style="margin-left: 20px">
             <h3>Change Username:</h3>
