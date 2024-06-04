@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     function updateTable() {
         $.ajax({
-            url: 'http://localhost/kodus/data-tracking.php',
+            url: 'http://crg-co1-23-0028/kodus/data-tracking.php',
             type: 'GET',
             success: function(data) {
                 //console.log(data); // Log the returned data
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     function updateTable2() {
         $.ajax({
-            url: 'http://localhost/kodus/data-tracking-meb.php',
+            url: 'http://crg-co1-23-0028/kodus/data-tracking-meb.php',
             type: 'GET',
             success: function(data) {
                 //console.log(data); // Log the returned data
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     function updateTable3() {
         $.ajax({
-            url: 'http://localhost/kodus/data-tracking-in.php',
+            url: 'http://crg-co1-23-0028/kodus/data-tracking-in.php',
             type: 'GET',
             success: function(data) {
                 //console.log(data); // Log the returned data
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     function updateTable4() {
         $.ajax({
-            url: 'http://localhost/kodus/data-tracking-out.php',
+            url: 'http://crg-co1-23-0028/kodus/data-tracking-out.php',
             type: 'GET',
             success: function(data) {
                 //console.log(data); // Log the returned data
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
     function updateHomeTable() {
         $.ajax({
-            url: 'http://localhost/kodus/home.php',
+            url: 'http://crg-co1-23-0028/kodus/home.php',
             type: 'GET',
             success: function(data) {
                 //console.log(data); // Log the returned data
@@ -236,7 +236,7 @@ function viewDetails(id) {
     document.cookie = 'lastViewedTime=' + new Date().toUTCString() + '; path=/';
 
     $.ajax({
-        url: 'http://localhost/kodus/get_details.php',
+        url: 'http://crg-co1-23-0028/kodus/get_details.php',
         type: 'POST',
         data: { id: id },
         beforeSend: function () {
@@ -302,7 +302,7 @@ function viewDetails(id) {
 
                     // Send the updated values to the server
                     $.ajax({
-                        url: 'http://localhost/kodus/get_details.php',
+                        url: 'http://crg-co1-23-0028/kodus/get_details.php',
                         type: 'POST',
                         data: { id: id, batchNumber: batchNumber, municipality: municipality, barangay: barangay, beneficiaries: beneficiaries, fund: fund, served: served, disbursed: disbursed, percent: percent, unpaid: unpaid, undisbursed: undisbursed, specialPayout: specialPayout, norsa: norsa, payout: payout, paymaster: paymaster, orientation: orientation, speaker: speaker, secondDay: secondDay, monitoring: monitoring, evaluator: evaluator, lastDay: lastDay, difference: difference, project: project, findings: findings, kia: kia, payroll: payroll, tts: tts, war: war, coc: coc, spelling: spelling, geobefore: geobefore, geoduring: geoduring, geoafter: geoafter, replacementsDate: replacementsDate, replacements: replacements, mebRDate: mebRDate, mebR: mebR, brgyReso: brgyReso, moaCert: moaCert, minutes: minutes, endorsement: endorsement},
                         beforeSend: function () {
@@ -398,7 +398,7 @@ function viewDetails2(id) {
     document.cookie = 'lastViewedTime=' + new Date().toUTCString() + '; path=/';
 
     $.ajax({
-        url: 'http://localhost/kodus/get_details2.php',
+        url: 'http://crg-co1-23-0028/kodus/get_details2.php',
         type: 'POST',
         data: { id: id },
         beforeSend: function () {
@@ -432,7 +432,7 @@ function viewDetails2(id) {
 
                     // Send the updated values to the server
                     $.ajax({
-                        url: 'http://localhost/kodus/get_details2.php',
+                        url: 'http://crg-co1-23-0028/kodus/get_details2.php',
                         type: 'POST',
                         data: { id: id, adas: adas, trackDate: trackDate, tProvince: tProvince, tMunicipality: tMunicipality, tBarangay: tBarangay, meb: meb, mer: mer, remarks: remarks},
                         beforeSend: function () {
@@ -506,7 +506,7 @@ function viewDetails3(id) {
     document.cookie = 'lastViewedTime=' + new Date().toUTCString() + '; path=/';
 
     $.ajax({
-        url: 'http://localhost/kodus/get_details3.php',
+        url: 'http://crg-co1-23-0028/kodus/get_details3.php',
         type: 'POST',
         data: { id: id },
         beforeSend: function () {
@@ -549,7 +549,7 @@ function viewDetails3(id) {
 
                     // Send the updated values to the server
                     $.ajax({
-                        url: 'http://localhost/kodus/get_details3.php',
+                        url: 'http://crg-co1-23-0028/kodus/get_details3.php',
                         type: 'POST',
         data: formData,
         contentType: false,
@@ -625,7 +625,7 @@ function viewDetails4(id) {
     document.cookie = 'lastViewedTime=' + new Date().toUTCString() + '; path=/';
 
     $.ajax({
-        url: 'http://localhost/kodus/get_details4.php',
+        url: 'http://crg-co1-23-0028/kodus/get_details4.php',
         type: 'POST',
         data: { id: id },
         beforeSend: function () {
@@ -666,7 +666,7 @@ function viewDetails4(id) {
 
                     // Send the updated values to the server
                     $.ajax({
-                        url: 'http://localhost/kodus/get_details4.php',
+                        url: 'http://crg-co1-23-0028/kodus/get_details4.php',
                         type: 'POST',
         data: formData,
         contentType: false,
