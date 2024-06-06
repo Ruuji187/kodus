@@ -350,6 +350,11 @@ $result4 = $conn->query($sql4);
 	<link rel="stylesheet" type="text/css" href="http://crg-co1-23-0028/kodus/css/style.css">
     <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/sweetalert2.min.css">
     <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/font-awesome.min.css">
+    <!-- Include SimpleBar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.css" />
+
+    <!-- Include SimpleBar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.js"></script>
 </head>
 <body>
     <div id="loading-overlay">

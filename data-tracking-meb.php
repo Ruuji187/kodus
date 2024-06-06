@@ -21,7 +21,7 @@
             <button class="btn" onclick="showSelectForm()">&nbsp;<span class="fa fa-file-pen"></span>Track Document</button>
         </div>
     </div>
-    <div class="table-container" id="data-table2">
+    <div data-simplebar class="table-container" id="data-table2">
         <table class="center" id="mySecondTable">
             <thead style="white-space: nowrap;">
                 <tr>

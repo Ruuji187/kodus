@@ -21,13 +21,13 @@
             <button class="btn" onclick="showSelectForm()">&nbsp;<span class="fa fa-file-pen"></span>Track Document</button>
         </div>
     </div>
-    <div class="table-container" id="data-table4">
+    <div data-simplebar class="table-container" id="data-table4">
         <table class="center" id="myFourthTable">
             <thead style="white-space: nowrap;">
                 <tr>
                     <th class='action' style='position:sticky; left: 0; background-color: white !important'>Action</th>
-                    <th>Outgoing Date</th>
-                    <th>DTN / DRN</th>
+                    <th onclick="w3.sortHTML('#myFourthTable', '.item4', 'td:nth-child(2)')" style="cursor: pointer;">Outgoing Date</th>
+                    <th onclick="w3.sortHTML('#myFourthTable', '.item4', 'td:nth-child(3)')" style="cursor: pointer;">DTN / DRN</th>
                     <th>Description</th>
                     <th>Receiving Office / Personnel</th>
                     <th>Date Received</th>

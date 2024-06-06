@@ -224,6 +224,9 @@
         // Hide the changePass div and show the changePassBtn
         changeDP.style.display = "none";
         changeDPBtn.style.display = "block";
+        document.getElementById('imagePreview').style.display = 'none';
+        document.getElementById('img2').style.display = 'block';
+        document.getElementById('new_picture').value = '';
     }
     </script>
 </body>

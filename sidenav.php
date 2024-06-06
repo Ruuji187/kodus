@@ -5,9 +5,7 @@
 </head>
 <body>
 	<div class="sidenav" id="sidenav">
-		<a href="http://crg-co1-23-0028/kodus/home">
-			<img class="logo" id="logo" src="http://crg-co1-23-0028/kodus/assets/logo.png">
-		</a>
+		<img class="logo" id="logo" src="http://crg-co1-23-0028/kodus/assets/logo.png">
 		<hr>
 		<a id="home" class="<?php addActiveClass('home.php', $currentPath); ?><?php addActiveClass('agusandelnorte.php', $currentPath); ?><?php addActiveClass('agusandelsur.php', $currentPath); ?><?php addActiveClass('dinagatislands.php', $currentPath); ?><?php addActiveClass('surigaodelnorte.php', $currentPath); ?><?php addActiveClass('surigaodelsur.php', $currentPath); ?>" href="http://crg-co1-23-0028/kodus/home"><i class="fa fa-home"></i> <span class="label">Home</span></a>
 

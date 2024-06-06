@@ -21,12 +21,12 @@
             <button class="btn" onclick="showSelectForm()">&nbsp;<span class="fa fa-file-pen"></span>Track Document</button>
         </div>
     </div>
-    <div class="table-container" id="data-table3">
+    <div data-simplebar class="table-container" id="data-table3">
         <table class="center" id="myThirdTable">
             <thead style="white-space: nowrap;">
                 <tr>
                     <th class='action' style='position:sticky; left: 0; background-color: white !important'>Action</th>
-                    <th onclick="w3.sortHTML('#myThirdTable', '.item2', 'td:nth-child(2)')" style="cursor: pointer;">Date</th>
+                    <th onclick="w3.sortHTML('#myThirdTable', '.item3', 'td:nth-child(2)')" style="cursor: pointer;">Date</th>
                     <th onclick="w3.sortHTML('#myThirdTable', '.item3', 'td:nth-child(3)')" style="cursor: pointer;">DTN / DRN</th>
                     <th>Description</th>
                     <th>JM Gwapo</th>

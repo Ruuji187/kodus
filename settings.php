@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         ?>
         <br><br>
-        <button class="infoBtn" style="position: absolute; left: 170px" id="changeUserBtn" type="button" onclick="toggleChangeUser()">Change Username?</button>
+        <button class="infoBtn" style="position: absolute; left: 170px; top: 202px" id="changeUserBtn" type="button" onclick="toggleChangeUser()">Change Username?</button>
 
         <button class="infoBtn" style="position: absolute; left: 450px; top: 202px;" id="changePassBtn" type="button" onclick="toggleChangePass()">Change Password?</button>
 
@@ -140,6 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h3>Change Display Photo:</h3>
             <form method="post" enctype="multipart/form-data" action="dpUpdate">
                 <label for="new_picture">Select file:</label><br><br>
+                <img id="img2" style="border-radius: 100%; width: 200px; height: 200px; object-fit: cover;" src="http://crg-co1-23-0028/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
                 <img id="imagePreview" src="#" alt="Image Preview" style="border-radius: 100%; width: 200px; height: 200px; object-fit: cover; display: none;"><br>
                 <input type="file" id="new_picture" name="picture" autocomplete="false" required onchange="previewImage(event)"><br>
                 <input class="submitBtn" type="submit" name="submitPicture" value="Submit">
@@ -154,8 +155,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             var reader = new FileReader();
             reader.onload = function() {
                 var img = document.getElementById('imagePreview');
+                var img2 = document.getElementById('img2');
                 img.src = reader.result;
                 img.style.display = 'block';
+                img2.style.display = 'none';
             };
             reader.readAsDataURL(event.target.files[0]);
         }

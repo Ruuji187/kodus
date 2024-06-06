@@ -21,7 +21,7 @@
             <button class="btn" onclick="showSelectForm()">&nbsp;<span class="fa fa-file-pen"></span>Track Document</button>
         </div>
     </div>
-        <div class="table-container" id="data-table">
+        <div data-simplebar class="table-container" id="data-table">
     		<table class="center" id="myTable">
                 <thead class="sticky-header">
                     <tr class="head1">
