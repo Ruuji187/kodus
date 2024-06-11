@@ -1,6 +1,8 @@
 <?php
+
 include "config.php";
 require "PhpSpreadsheet/vendor/autoload.php";
+include('base_url.php');
 
 session_start();
 
@@ -325,13 +327,13 @@ while ($data = $result->fetch_assoc()) {
 $sql = "SELECT id, tracking_number, province, pdo, batchNumber, municipality, barangay, beneficiaries, fund, served, disbursed, percent, unpaid, undisbursed, specialPayout, norsa, payout, paymaster, orientation, speaker, secondDay, monitoring, evaluator, lastDay, difference, project, findings, kia, payroll, tts, war, coc, geobefore, geoduring, geoafter, spelling, replacementsDate, replacements, mebRDate, mebR, brgyReso, moaCert, minutes, endorsement FROM trackdata WHERE track_type = 1";
 $result = $conn->query($sql);
 
-$sql2 = "SELECT id, tracking_number, adas, trackDate, tProvince, tMunicipality, tBarangay, meb, mer, remarks FROM trackdata WHERE track_type = 2";
+$sql2 = "SELECT id, tracking_number, adas, trackDate, tProvince, tMunicipality, tBarangay, meb, mer, remarks FROM trackdata WHERE track_type = 2 ORDER BY tracking_number DESC";
 $result2 = $conn->query($sql2);
 
-$sql3 = "SELECT id, aaDate, tracking_number2, description, jmGwapo, focal, remarks2, sHead, file_name, file_size, file_type, upload_time FROM aatracker WHERE aaType = 1";
+$sql3 = "SELECT id, aaDate, tracking_number2, description, jmGwapo, focal, remarks2, sHead, file_name, file_size, file_type, upload_time FROM aatracker WHERE aaType = 1 ORDER BY tracking_number2 DESC";
 $result3 = $conn->query($sql3);
 
-$sql4 = "SELECT id, outDate, tracking_number2, description, personnel, dateReceived, remarks2, file_name FROM aatracker WHERE aaType = 2";
+$sql4 = "SELECT id, outDate, tracking_number2, description, personnel, dateReceived, remarks2, file_name FROM aatracker WHERE aaType = 2 ORDER BY tracking_number2 DESC";
 $result4 = $conn->query($sql4);
 ?>
 
@@ -340,21 +342,20 @@ $result4 = $conn->query($sql4);
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="http://crg-co1-23-0028/kodus/js/jquery-3.6.4.min.js"></script>
-    <script src="http://crg-co1-23-0028/kodus/js/sweetalert2@10.js"></script>
-    <script src="http://crg-co1-23-0028/kodus/js/7cec42d8be.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/script.js"></script>
-    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/dataScript.js"></script>
-    <script type="text/javascript" src="http://crg-co1-23-0028/kodus/js/w3.js"></script>
-	<link rel="icon" href="http://crg-co1-23-0028/kodus/assets/logo.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="http://crg-co1-23-0028/kodus/css/style.css">
-    <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/sweetalert2.min.css">
-    <link rel="stylesheet" href="http://crg-co1-23-0028/kodus/css/font-awesome.min.css">
+    <script src="<?php echo $base_url;?>kodus/js/jquery-3.6.4.min.js"></script>
+    <script src="<?php echo $base_url;?>kodus/js/sweetalert2@10.js"></script>
+    <script src="<?php echo $base_url;?>kodus/js/7cec42d8be.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="<?php echo $base_url;?>kodus/script.js"></script>
+    <script type="text/javascript" src="<?php echo $base_url;?>kodus/dataScript.js"></script>
+    <script type="text/javascript" src="<?php echo $base_url;?>kodus/js/w3.js"></script>
+	<link rel="icon" href="<?php echo $base_url;?>kodus/assets/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>kodus/css/style.css">
+    <link rel="stylesheet" href="<?php echo $base_url;?>kodus/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?php echo $base_url;?>kodus/css/font-awesome.min.css">
     <!-- Include SimpleBar CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url;?>kodus/css/simplebar.min.css" />
     <!-- Include SimpleBar JS -->
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@5.3.6/dist/simplebar.min.js"></script>
+    <script type="text/javascript" src="<?php echo $base_url;?>kodus/js/simplebar.min.js"></script>
 </head>
 <body>
     <div id="loading-overlay">
@@ -367,16 +368,16 @@ $result4 = $conn->query($sql4);
             <span id="text" class="smooth-transition">KliMalasakit Online Document Updating System</span>
 		</h2>
 		<div class="profile-container">
-			<img class="profile" src="http://crg-co1-23-0028/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
+			<img class="profile" src="<?php echo $base_url;?>kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
 			<div class="dropdown-content">
-				<img class="big-profile" src="http://crg-co1-23-0028/kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
+				<img class="big-profile" src="<?php echo $base_url;?>kodus/pictures/<?php echo htmlspecialchars($picture, ENT_QUOTES, 'UTF-8'); ?>">
 				<!-- <div class="desc">Logo</div> -->
 			</div>
 		</div>
 		<div class="username">
 			<i class="fa fa-caret-down"></i><button class="usrDrpDwn"><?php echo htmlspecialchars($username, ENT_QUOTES, 'UTF-8'); ?></button>
 			<div class="usrOpt">
-				<a class="drpdwn" href="http://crg-co1-23-0028/kodus/settings"><span class="fa fa-gear">&nbsp;</span>Settings</a>
+				<a class="drpdwn" href="kodus/settings"><span class="fa fa-gear">&nbsp;</span>Settings</a>
 				<hr>
 				<a class="drpdwn" id="logoutButton"><span class="fa fa-sign-out">&nbsp;</span>Logout</a>
 			</div>

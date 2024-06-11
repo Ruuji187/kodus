@@ -14,7 +14,7 @@
         <div id="loading-spinner"></div>
     </div><br>
 	<div class="content" id="content">
-        <h3 class="secondHead">Documents Tracking</h3>
+        <h3 class="secondHead">Documents/Implementation Tracking</h3>
         <div id="sE">
         <div class="search">
             &nbsp; <input type="text" id="searchInput" placeholder="Search..."><i class="clear-button" onclick="clearSearch()">&times;</i>

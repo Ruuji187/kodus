@@ -250,7 +250,7 @@ function viewDetails(id) {
         success: function (data) {
             //console.log('Raw Response:', data);
             Swal.fire({
-                title: 'Row Details',
+                title: 'Documents Tracking',
                 width: 'auto',
                 html: data,
                 showCloseButton: true,
@@ -412,7 +412,7 @@ function viewDetails2(id) {
         success: function (data) {
             //console.log('Raw Response:', data);
             Swal.fire({
-                title: 'Row Details',
+                title: 'MEB Tracking',
                 width: 'auto',
                 html: data,
                 showCloseButton: true,
@@ -520,7 +520,7 @@ function viewDetails3(id) {
         success: function (data) {
             //console.log('Raw Response:', data);
             Swal.fire({
-                title: 'Row Details',
+                title: 'Incoming Documents',
                 width: 'auto',
                 html: data,
                 showCloseButton: true,
@@ -639,7 +639,7 @@ function viewDetails4(id) {
         success: function (data) {
             //console.log('Raw Response:', data);
             Swal.fire({
-                title: 'Row Details',
+                title: 'Outgoing Documents',
                 width: 'auto',
                 html: data,
                 showCloseButton: true,

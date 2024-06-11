@@ -668,7 +668,7 @@ window.showTrackForm = function () {
     showCloseButton: true,
     allowOutsideClick: false,
     html: `
-    <div style="max-height: 78vh; overflow-y: auto;">
+    <div data-simplebar style="max-height: 78vh; overflow-y: auto; width: 70vw">
       <form class="input-container" id="swal-form">
         <input type="text" name="tracking_number" id="tracking_number" hidden>
         <section class="section">
@@ -777,7 +777,7 @@ window.showTrackForm = function () {
                 <input class="swal2-input custom-input secondDay exempted" type="date" id="secondDay" name="secondDay" placeholder="1st Training Day">
             </div>
             <div>
-                <label for="monitoring">Project Monitoring by RRP-CFW/T Team</label><br>
+                <label for="monitoring">Project Monitoring by RRP-CFTW Team</label><br>
                 <textarea class="swal2-input custom-input monitoring" type="text" id="monitoring" name="monitoring" placeholder="Monitoring"></textarea>
             </div>
             <div>

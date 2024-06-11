@@ -65,7 +65,7 @@
                     $fontColorB = getFontColorB($totalVariance);
 
                     echo "<tr onclick=\"window.location.href='provinces/" . str_replace(" ", "", strtolower($province)) . "'\">";
-                    echo "<td>$province</td>";
+                    echo "<td style='cursor: pointer'>$province</td>";
                     echo "<td>$municipalityCount</td>";
                     echo "<td>$barangayCount</td>";
                     echo "<td>" . ($beneficiarySum == 0 ? 0 : $beneficiarySum) . "</td>";
